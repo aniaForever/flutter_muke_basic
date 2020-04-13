@@ -81,5 +81,11 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
 
+  #自定义字体
+  fonts:
+    - family: RubikMonoOne
+      fonts:
+        - asset: fonts/RubikMonoOne.ttf
+
   assets:
     - images/
