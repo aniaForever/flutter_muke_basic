@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter_muke_basic/course5_module11.dart';
 import 'package:flutter_muke_basic/course5_module12.dart';
+import 'package:flutter_muke_basic/course5_module13.dart';
 
 import 'course5_module4.dart';
 import 'course5_module5.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         "respage":(BuildContext context)=>ResPage(),
         "widgetLifeCycle":(BuildContext context)=>WidgetLifeCyclePage(),
         "appLifeCycle":(BuildContext context)=>AppLifeCycle(),
+        "dynamicTheme":(BuildContext context)=>DynamicThemePage(),
       },
     );
   }
@@ -76,6 +78,7 @@ class _RouterNavigatorState extends State<RouterNavigator> {
             _item("如何导入和使用Flutter的资源文件", ResPage(), "respage"),
             _item("flutter页面生命周期指南", WidgetLifeCyclePage(), "widgetLifeCycle"),
             _item("如何获取flutter应用的生命周期", AppLifeCycle(), "appLifeCycle"),
+            _item("如何修改flutter应用的主题", DynamicThemePage(), "dynamicTheme"),
           ],
 //
         ),
