@@ -31,7 +31,7 @@ dependencies:
   flutter_color_plugin: ^0.0.2
 
   #打开第三方app
-  #url_launcher: ^5.4.2
+  url_launcher: ^5.4.2
 
 dev_dependencies:
   flutter_test:

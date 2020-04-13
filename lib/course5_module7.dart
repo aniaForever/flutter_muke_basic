@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:flutter_muke_basic/course5_module11.dart';
 
 import 'course5_module4.dart';
 import 'course5_module5.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         "layout":(BuildContext context)=>FlutterLayoutPage(),
         "gesture":(BuildContext context)=>GesturePage(),
         "respage":(BuildContext context)=>ResPage(),
+        "widgetLifeCycle":(BuildContext context)=>WidgetLifeCyclePage(),
       },
     );
   }
@@ -70,6 +72,7 @@ class _RouterNavigatorState extends State<RouterNavigator> {
             _item("如何进行Flutter布局开发", FlutterLayoutPage(), "layout"),
             _item("如何检测用户手势以及处理点击事件", GesturePage(), "gesture"),
             _item("如何导入和使用Flutter的资源文件", ResPage(), "respage"),
+            _item("flutter页面生命周期指南", WidgetLifeCyclePage(), "widgetLifeCycle"),
           ],
 //
         ),
