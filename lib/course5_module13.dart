@@ -40,9 +40,9 @@ class _DynamicThemePageState extends State<DynamicThemePage> {
                   //切换主题
                   setState(() {
                     if (_brightness == Brightness.light) {
-                      _brightness = Brightness.dark;
+                      _brightness = Brightness.dark;//夜间模式
                     } else {
-                      _brightness = Brightness.light;
+                      _brightness = Brightness.light;//日间模式
                     }
                   });
                 },
