@@ -33,6 +33,9 @@ dependencies:
   #打开第三方app
   url_launcher: ^5.4.2
 
+  #拍照、打开相册获取相片
+  image_picker: ^0.6.5
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -4,6 +4,7 @@ import 'package:flutter_muke_basic/course5_module11.dart';
 import 'package:flutter_muke_basic/course5_module12.dart';
 import 'package:flutter_muke_basic/course5_module13.dart';
 import 'package:flutter_muke_basic/course5_module14.dart';
+import 'package:flutter_muke_basic/course5_module15.dart';
 
 import 'course5_module4.dart';
 import 'course5_module5.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         "appLifeCycle":(BuildContext context)=>AppLifeCycle(),
         "dynamicTheme":(BuildContext context)=>DynamicThemePage(),
         "configFont":(BuildContext context)=>ConfigFontPage(),
+        "pickImage":(BuildContext context)=>PickImagePage(),
       },
     );
   }
@@ -82,6 +84,7 @@ class _RouterNavigatorState extends State<RouterNavigator> {
             _item("如何获取flutter应用的生命周期", AppLifeCycle(), "appLifeCycle"),
             _item("如何修改flutter应用的主题", DynamicThemePage(), "dynamicTheme"),
             _item("如何自定义字体", ConfigFontPage(), "configFont"),
+            _item("拍照App开发", PickImagePage(), "pickImage"),
           ],
 //
         ),
