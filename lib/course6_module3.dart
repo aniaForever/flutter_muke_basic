@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 //图片控件开发详解
 
@@ -37,7 +38,7 @@ class _ImageDemoPageState extends State {
         body: Column(
           children: <Widget>[
             //1、加载网络图片
-            Image.network('http://www.devio.org/img/avatar.png'),
+            Image.network('http://www.devio.org/img/avatar.png',width: 40,height: 40,),
             //2、加载项目里面的本地图片：注意这里要是绝对路径
             Image(
               height: 100,
@@ -72,6 +73,25 @@ class _ImageDemoPageState extends State {
                         )
                       : Text("图片加载是吧");
                 }),
+
+            //5、加载网络图片，给图片添加placeholder
+            Stack(
+              children: <Widget>[
+                Center(
+                  //圆形进度条
+                  child: CircularProgressIndicator(),
+                ),
+                Center(
+                  child: FadeInImage.memoryNetwork(
+                    //设置placeholder
+                      placeholder: kTransparentImage,
+                      image: "http://www.devio.org/img/avatar.png"),
+                ),
+              ],
+            ),
+
+
+
           ],
         ),
       ),
