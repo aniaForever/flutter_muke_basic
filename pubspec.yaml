@@ -36,6 +36,9 @@ dependencies:
   #拍照、打开相册获取相片
   image_picker: ^0.6.5
 
+ #获取本地路径
+  path_provider: ^1.6.7
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
