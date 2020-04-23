@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-//动画Animation开发指南-AnimatedWidget与AnimatedBuilder-1
+//动画Animation开发指南-怎么实现一个动画
 void main() {
   runApp(LogoAppPage());
 }

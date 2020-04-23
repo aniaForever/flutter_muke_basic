@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-//用AnimatedWidget与AnimatedBuilder简化和重构我们对动画的使用
+//动画Animation开发指南-用AnimatedWidget与AnimatedBuilder简化和重构我们对动画的使用  之AnimatedWidget
 void main() {
   runApp(LogoAppWidgetPage());
 }
@@ -19,7 +19,7 @@ class AnimatedLogo extends AnimatedWidget {
       : super(key: key, listenable: animation);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {//在这里会根据动画值的变化重新渲染
     final Animation<double> animation = listenable;
     return Center(
       child: Container(
@@ -52,10 +52,10 @@ class _LogoAppWidgetPageState extends State<LogoAppWidgetPage>
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "用AnimatedWidget与AnimatedBuilder简化和重构我们对动画的使用",
+      title: "用AnimatedWidget简化我们对动画的使用",
       home: Scaffold(
         appBar: AppBar(
-          title: Text("用AnimatedWidget与AnimatedBuilder简化和重构我们对动画的使用"),
+          title: Text("用AnimatedWidget简化我们对动画的使用"),
         ),
         body: Column(
           children: <Widget>[
