@@ -24,9 +24,8 @@ class _LogoAppPageState extends State<LogoAppPage>
   void initState() {
     super.initState();
     //指定了执行时间2s。当页面在屏幕不可见的时候动画做一些资源的回收
-    animationController = AnimationController(
-        vsync: this,
-        duration: Duration(seconds: 2));
+    animationController =
+        AnimationController(vsync: this, duration: Duration(seconds: 2));
     //数值在0-400之间变化
     animation = Tween<double>(begin: 0, end: 400).animate(animationController);
     //用于给Animation添加帧监听器，在每一帧都会被调用。帧监听器中最常见的行为是改变状态后调用setState()来触发UI重建。
