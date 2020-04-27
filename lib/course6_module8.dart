@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 //动画Animation开发指南-用AnimatedWidget与AnimatedBuilder简化和重构我们对动画的使用  之AnimatedBuilder
+//主要是对动画过程进行了拆分
 void main() {
   runApp(LogoApp());
 }
