@@ -43,6 +43,9 @@ class _LogoAppWidgetPageState extends State<LogoAppWidgetPage>
     //指定了执行时间2s。当页面在屏幕不可见的时候动画做一些资源的回收
     animationController =
         AnimationController(vsync: this, duration: Duration(seconds: 2));
+//    指定一个Curve，来实现一个类似于弹簧效果的动画过程。不指定的话就是匀速变化的效果
+    animation =
+        CurvedAnimation(parent: animationController, curve: Curves.bounceIn);
     //数值在0-400之间变化
     animation = Tween<double>(begin: 0, end: 400).animate(animationController);
     //这里不需要添加监听器了，因为已经有了AnimatedLogo
